@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NewLuckView">
+
+        <attr name="luck_odd_sector_color" format="color"/>
+        <attr name="luck_even_sector_color" format="color"/>
+
+        <attr name="luck_item_width_ratio" format="float"/>
+        <attr name="luck_item_height_ratio" format="float"/>
+        <attr name="luck_item_offset_ratio" format="float"/>
+
+        <attr name="luck_text_size" format="dimension" />
+        <attr name="luck_text_color" format="color" />
+        <!--奖品名称文字距离圆心的长度和半径之比
+        See {@link android.widget.GridLayout#ALIGN_BOUNDS}.-->
+        <attr name="luck_text_offset_ratio" format="float"/>
+
+        <attr name="luck_indicator_width_ratio" format="float"/>
+        <attr name="luck_indicator_height_ratio" format="float"/>
+        <attr name="luck_indicator_drawable" format="reference"/>
+        
+        <attr name="luck_cycle_millis" format="integer"/>
+
+    </declare-styleable>
+</resources>
