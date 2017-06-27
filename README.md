@@ -103,11 +103,14 @@
     }
 ```
 
+# 使用Gradle
+[![](https://jitpack.io/v/ideastudios/LuckView.svg)](https://jitpack.io/#ideastudios/LuckView)
 
 # 注意
 * LuckView属性中，只有奖品图片的偏移量 和 文字的偏移量 是相对于圆盘半径的，其他的相关属性都是相对于圆盘的直径
 * LuckView中奖项的数量大小应该设置为可以能被360整除的数，如果不能被360整除，则会出现相应bug
 * LuckView draw不同奖项图片 draw不同奖项名称是通过canvas.rotate(sectorAnger)的方式实现的
+
 
 
 # 感谢
