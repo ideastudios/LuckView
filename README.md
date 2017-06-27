@@ -103,8 +103,25 @@
     }
 ```
 
-# 使用Gradle
+# Gradle
 [![](https://jitpack.io/v/ideastudios/LuckView.svg)](https://jitpack.io/#ideastudios/LuckView)
+
+1. Add it in your root build.gradle at the end of repositories:
+```
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+2. Add the dependency
+```
+	dependencies {
+	        compile 'com.github.ideastudios:LuckView:0.0.1'
+	}
+
+```
 
 # 注意
 * LuckView属性中，只有奖品图片的偏移量 和 文字的偏移量 是相对于圆盘半径的，其他的相关属性都是相对于圆盘的直径
