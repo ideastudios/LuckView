@@ -149,6 +149,7 @@ public class NewLuckView extends View {
      */
     private float indicatorHeightRatio;
 
+    private boolean enable = true;
 
     private Bitmap indicatorBitmap;
     private int cycleInMilliseconds;
@@ -358,6 +359,21 @@ public class NewLuckView extends View {
         this.cycleInMilliseconds = cycleInMilliseconds;
     }
 
+    /**
+     * 是否可用 默认为true
+     * @return
+     */
+    public boolean isEnable() {
+        return enable;
+    }
+
+    /**
+     * 设置是否可用 当为false时，表示不对点击事件进行监听
+     * @param enable
+     */
+    public void setEnable(boolean enable) {
+        this.enable = enable;
+    }
 
     /**
      * 如果改变相应配置  需要刷新相应属性
@@ -462,6 +478,9 @@ public class NewLuckView extends View {
     @Override
     public boolean onTouchEvent(MotionEvent event) {
 
+        if(!enable){
+            return false;
+        }
         int centerX = getMeasuredWidth() / 2;
         int centerY = getMeasuredHeight() / 2;
 
