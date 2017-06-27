@@ -14,7 +14,7 @@
         android:layout_centerInParent="true"
         app:luck_indicator_drawable="@mipmap/ic_launcher"
         app:luck_indicator_height_ratio="0.3"
-        app:luck_indicator_width_ratio="0.208"/>
+        app:luck_indicator_width_ratio="0.2"/>
 
 
 </RelativeLayout>
